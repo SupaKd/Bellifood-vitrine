@@ -1,0 +1,42 @@
+.slider {
+  width: 100%;
+  padding: 3rem 0;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  .simple-slider {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    padding: 2rem 0;
+
+    .slider-track {
+      display: flex;
+      gap: 1rem;
+      padding: 0rem 1rem;
+    }
+
+    .slide {
+      flex: 0 0 auto;
+      scroll-snap-align: center;
+      width: 80%;
+      max-width: 300px;
+      border-radius: 1rem;
+      overflow: hidden;
+      background-color: #fff;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+  }
+}
