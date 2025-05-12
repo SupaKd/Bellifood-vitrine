@@ -1,20 +1,41 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import Slider from "../UI/Slider";
 
 function Home() {
+
+  const images = [
+    "/image/hero.webp",
+    "/image/hero1.webp",
+    "/image/hero2.webp"
+  ];
+
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % images.length);
+    }, 4000); // Changement toutes les 4 secondes
+
+    return () => clearInterval(interval);
+  }, []);
   return (
     <main>
-      <section className="hero">
-      <div className="hero__overlay">
-        <div className="hero__content">
-          <h1 className="hero__title">Savourez l'authenticité du french Tacos</h1>
-          <p className="hero__subtitle">
-            Des recettes fraîchement préparées avec passion à Oyonnax.
-          </p>
-          <NavLink to="/menu" className="hero__cta">
-            Voir le menu
-          </NavLink>
+       <section className="hero">
+      <div
+        className="hero__slide"
+        style={{ backgroundImage: `url(${images[current]})` }}
+      >
+        <div className="hero__overlay">
+          <div className="hero__content">
+            <h1 className="hero__title">Savourez l'authenticité du French Tacos</h1>
+            <p className="hero__subtitle">
+              Des recettes fraîchement préparées avec passion à Oyonnax.
+            </p>
+            <NavLink to="/menu" className="hero__cta">
+              Voir le menu
+            </NavLink>
+          </div>
         </div>
       </div>
     </section>
