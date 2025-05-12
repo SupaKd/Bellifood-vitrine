@@ -1,17 +1,15 @@
-import { useParams } from 'react-router-dom';
-import products from '../data/products';
+import { useParams } from "react-router-dom";
+import products from "../data/products";
 
 function CategoryPage() {
   const { category } = useParams();
-  
-  // Trouver la catégorie correspondante en fonction du 'slug'
+
   const categoryData = products.find((cat) => cat.slug === category);
 
   if (!categoryData) {
     return <h2>Catégorie introuvable</h2>;
   }
 
-  // Les produits de la catégorie trouvée
   const items = categoryData.products;
 
   return (
