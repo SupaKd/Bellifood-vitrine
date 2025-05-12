@@ -1,9 +1,9 @@
 .contact-page {
     @include flex-center;
-    min-height: 100vh;
     font-family:'Times New Roman', Times, serif;
     padding: 2rem;
     color: #fff;
+    @include slide-left;
   
     .contact-card {
       background: #fff;

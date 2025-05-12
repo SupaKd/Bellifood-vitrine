@@ -1,5 +1,7 @@
 import React from 'react';
 
+//https://www.emailjs.com pour envoyer mail 
+
 function Contact() {
   return (
     <div className="contact-page">
@@ -19,7 +21,7 @@ function Contact() {
             <label htmlFor="message">Message</label>
             <textarea id="message" rows="5" placeholder="Votre message"></textarea>
           </div>
-          <button type="submit">Envoyer</button>
+          <button type="submit">Envoyer</button> //https://www.emailjs.com
         </form>
       </div>
     </div>
