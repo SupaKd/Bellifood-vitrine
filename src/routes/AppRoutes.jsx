@@ -7,6 +7,7 @@ import Story from "../pages/Story";
 
 function AppRoutes() {
   return (
+    
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/menu" element={<Menu />} />

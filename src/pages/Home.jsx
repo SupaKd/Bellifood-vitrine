@@ -6,7 +6,6 @@ function Home() {
 
   const images = [
     "/image/hero.webp",
-    "/image/hero1.webp",
     "/image/hero2.webp"
   ];
 
@@ -15,7 +14,7 @@ function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
-    }, 4000); // Changement toutes les 4 secondes
+    }, 4000); 
 
     return () => clearInterval(interval);
   }, []);

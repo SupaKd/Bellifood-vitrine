@@ -1,9 +1,8 @@
 import { useLocation } from "react-router-dom";
-
 import Header from "./layout/Header";
 import Footer from "./layout/Footer";
 import AppRoutes from "./routes/AppRoutes";
-
+import ScrollToTop from "./hooks/ScrollToTop"; 
 
 function App() {
   const location = useLocation();
@@ -11,12 +10,14 @@ function App() {
   function handlePathname() {
     return location.pathname === "/"
       ? "home"
-      : location.pathname.slice(1, location.pathname.length);
+      : location.pathname.slice(1);
   }
 
   return (
     <div className="App">
       <Header />
+
+      <ScrollToTop />
 
       <main className="container" id={handlePathname()}>
         <AppRoutes />
@@ -28,3 +29,4 @@ function App() {
 }
 
 export default App;
+
