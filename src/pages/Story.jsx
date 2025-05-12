@@ -10,12 +10,10 @@ function Story() {
     { id: 3, title: 'L\'équipe', image: 'image/product.webp', description: 'Une équipe passionnée, toujours prête à satisfaire vos papilles.' },
   ];
 
-  // Fonction pour passer à l'image suivante
   const nextStory = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % stories.length);
   };
 
-  // Fonction pour passer à l'image précédente
   const prevStory = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? stories.length - 1 : prevIndex - 1

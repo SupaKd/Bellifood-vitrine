@@ -2,11 +2,18 @@
   width: 100%;
   padding: 3rem 0;
   text-align: center;
+  background-color: #f7f7f7;
+  text-align: center;
 
   h2 {
     font-size: 2rem;
-    font-weight: bold;
     margin-bottom: 2rem;
+    font-weight: bold;
+  }
+
+  p{
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
   }
 
   .simple-slider {
