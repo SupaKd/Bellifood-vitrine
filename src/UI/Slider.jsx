@@ -30,7 +30,7 @@ function Slider() {
 
   return (
     <section className="simple-slider">
-      <h2>Nos best sellers</h2>
+      <h2>Nos best sellers 🚀</h2>
       <div className="slider-track">
         {slides.map((slide) => (
           <div className="slide" key={slide.id}>
