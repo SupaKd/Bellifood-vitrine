@@ -5,25 +5,25 @@ function Slider() {
     {
       id: 1,
       img: "/image/product.webp",
-      description: "Tacos raclette",
+      description: "SAVOYARD",
       alt: "Tacos 1",
     },
     {
       id: 2,
       img: "/image/product.webp",
-      description: "Tacos boeuf",
+      description: "CHEESE BURGER",
       alt: "Tacos 2",
     },
     {
       id: 3,
       img: "/image/product.webp",
-      description: "Tacos tenders",
+      description: " CHEVRE MIEL",
       alt: "Tacos 3",
     },
     {
       id: 4,
       img: "/image/product.webp",
-      description: "Tacos boursin",
+      description: "CROQUE-MONSIEUR",
       alt: "Tacos 4",
     },
   ];

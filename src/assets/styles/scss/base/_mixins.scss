@@ -37,22 +37,6 @@
     transition: $properties $duration $timing;
   }
   
-  @mixin shake-hover($duration: 0.5s, $distance: 5px) {
-    transition: transform 0.1s ease-in-out;
-  
-    &:hover {
-      animation: shake $duration infinite;
-    }
-  
-    @keyframes shake {
-      0% { transform: translateX(0); }
-      25% { transform: translateX(-#{$distance}); }
-      50% { transform: translateX(#{$distance}); }
-      75% { transform: translateX(-#{$distance}); }
-      100% { transform: translateX(0); }
-    }
-  }
-  
   @mixin slide-left($duration: 1s, $distance: 100%) {
     animation: slide-left $duration ease-out forwards;
   
@@ -70,3 +54,25 @@
       }
     }
   }
+  
+  // ==============================
+  // Effet 
+  // ==============================
+
+  @mixin shake-hover($duration: 0.5s, $distance: 5px) {
+    transition: transform 0.1s ease-in-out;
+  
+    &:hover {
+      animation: shake $duration infinite;
+    }
+  
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-#{$distance}); }
+      50% { transform: translateX(#{$distance}); }
+      75% { transform: translateX(-#{$distance}); }
+      100% { transform: translateX(0); }
+    }
+  }
+  
+  
