@@ -1,7 +1,6 @@
 .menu {
   padding: 2rem;
   text-align: center;
-  @include slide-left;
 
   .top-menu {
     background-color: $secondary-color;
@@ -9,6 +8,8 @@
     padding: 1.5rem;
     border-radius: $radius-md;
     margin-bottom: 2rem;
+    @include slide-top;
+
 
     .menu-title {
       font-size: 2rem;
@@ -35,6 +36,8 @@
     cursor: pointer;
     overflow: hidden;
     position: relative;
+    @include slide-top;
+
 
     &:hover {
       transform: scale(1.05);

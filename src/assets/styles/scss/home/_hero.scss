@@ -29,6 +29,7 @@
       text-align: center;
       color: #fff;
       max-width: 800px;
+      @include slide-top;
     }
   
     &__title {

@@ -54,6 +54,25 @@
       }
     }
   }
+
+  @mixin slide-top($duration: 1s, $distance: 100%) {
+    animation: slide-top $duration ease-out forwards;
+  
+    @keyframes slide-top {
+      0% {
+        transform: translateY(#{$distance});
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+  
   
   // ==============================
   // Effet 
