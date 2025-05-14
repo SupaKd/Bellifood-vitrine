@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 function Hero() {
-  const images = ["/image/hero.webp", "/image/hero2.webp"];
+  const images = ["/image/hero.webp", "/image/hero2.webp", "/image/hero3.webp"];
 
   const [current, setCurrent] = useState(0);
 
