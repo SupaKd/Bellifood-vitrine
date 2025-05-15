@@ -1,6 +1,5 @@
-import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import Slider from "../../UI/Slider";
+import Bestsellers from "./Bestsellers";
 import Hero from "../home/Hero";
 import Actualite from "./Actualite";
 
@@ -15,8 +14,12 @@ function Home() {
         <Actualite />
       </section>
 
+      <section className="resto">
+        <img src="/image/resto.webp" alt="resto" />
+      </section>
+
       <section className="slider">
-        <Slider />
+        <Bestsellers />
       </section>
 
       <div className="background-home">
@@ -28,16 +31,13 @@ function Home() {
               frais et une touche maison. Situés au cœur d’Oyonnax, notre
               restaurant vous accueille tous les jours.
             </p>
-          </div>
-        </section>
-      </div>
-
-      <section className="home-contact">
-        <h2>Une question ?</h2>
+            <h2>Une question ?</h2>
         <NavLink to="contact">
           <button>Contactez-nous</button>
         </NavLink>
-      </section>
+          </div>
+        </section>
+      </div>
     </main>
   );
 }

@@ -1,23 +1,41 @@
+import React from "react";
 
 function Actualite() {
-    return(
-        <section className="actualites">
-        <h2>Actualités</h2>
-        <div className="actualites__list">
-          <div className="actualite">
-            <h3>🔥 Nouveau : Tacos Raclette !</h3>
-            <p>Disponible tout l’hiver avec fromage fondant et viande au choix.</p>
+  const actuslides = [
+    {
+      id: 1,
+      img: "/image/product.webp",
+      title: "🔥 Nouveau : Tacos Raclette !",
+      content: "Disponible tout l’hiver avec fromage fondant et viande au choix.",
+    },
+    {
+      id: 2,
+      img: "/image/product.webp",
+      title: "⏰ Fermeture exceptionnelle",
+      content: "Le restaurant sera fermé le 1er mai pour la fête du travail.",
+    },
+    {
+      id: 3,
+      img: "/image/product.webp",
+      title: "🎉 Promo du mois",
+      content: "1 menu acheté = 1 boisson offerte tous les mardis !",
+    },
+  ];
+
+  return (
+    <section className="actualite-slider">
+      <h2>Actualités 🗞️</h2>
+      <div className="slider-track">
+        {actuslides.map((slide) => (
+          <div className="slide" key={slide.id}>
+            <img src={slide.img} alt={slide.title} />
+            <h3>{slide.title}</h3>
+            <p>{slide.content}</p>
           </div>
-          <div className="actualite">
-            <h3>⏰ Fermeture exceptionnelle</h3>
-            <p>Le restaurant sera fermé le 1er mai pour la fête du travail.</p>
-          </div>
-          <div className="actualite">
-            <h3>🎉 Promo du mois</h3>
-            <p>1 menu acheté = 1 boisson offerte tous les mardis !</p>
-          </div>
-        </div>
-      </section>
-    )
+        ))}
+      </div>
+    </section>
+  );
 }
+
 export default Actualite;

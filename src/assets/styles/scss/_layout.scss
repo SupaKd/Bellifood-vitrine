@@ -113,23 +113,17 @@
 //------------- FOOTER ----------------//
 
 footer {
-  padding: 2rem 1rem;
-  background-color: $primary-color;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-
+  background-color: #1D2833;
+  
   section {
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 0.5rem;
-    background-color: $background-color;
-    border-radius: $radius-md;
     color: #fff;
 
     article {
-      margin: 1.5rem;
+      margin: 1rem;
       h3 {
         font-size: 1.5rem;
         font-family: "Times New Roman", Times, serif;
@@ -174,11 +168,10 @@ footer {
 
   .footer-bottom {
     text-align: center;
-    margin-top: 2rem;
-    padding-top: 1rem;
-    border-top: 1px solid $secondary-color;
+    padding: 1rem;
+    border-top: 1px solid #f9f9f9;
     font-size: $font-size-sm;
-    color: $background-color;
+    color: #fff;
   }
 
   // TABLETTE (>= 768px)

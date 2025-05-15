@@ -1,5 +1,18 @@
+.resto {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: $radius-md;
+  }
+}
+
+
 .background-home {
-  background: url("image/hero2.webp") no-repeat center center;
+  background: url("image/fond.webp") no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 50vh;
@@ -10,7 +23,7 @@
   .propos {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6); 
+    background: rgba(0, 0, 0, 0.4); 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,19 +45,6 @@
       }
     }
   }
-}
-
-// Section "Contact rapide"
-.home-contact {
-  padding: 4rem 2rem;
-  text-align: center;
-  background-color: $primary-color;
-
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-
   button {
     background-color: $info-color;
     color: white;
@@ -61,8 +61,4 @@
     }
   }
 }
-
-
-
-
 
