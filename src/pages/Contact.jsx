@@ -21,7 +21,7 @@ function Contact() {
             <label htmlFor="message">Message</label>
             <textarea id="message" rows="5" placeholder="Votre message"></textarea>
           </div>
-          <button type="submit">Envoyer</button> //https://www.emailjs.com
+          <button type="submit">Envoyer</button> 
         </form>
       </div>
     </div>

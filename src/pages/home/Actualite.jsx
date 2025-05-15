@@ -4,19 +4,19 @@ function Actualite() {
   const actuslides = [
     {
       id: 1,
-      img: "/image/product.webp",
+      img: "/image/actu.webp",
       title: "🔥 Nouveau : Tacos Raclette !",
       content: "Disponible tout l’hiver avec fromage fondant et viande au choix.",
     },
     {
       id: 2,
-      img: "/image/product.webp",
+      img: "/image/actu1.webp",
       title: "⏰ Fermeture exceptionnelle",
       content: "Le restaurant sera fermé le 1er mai pour la fête du travail.",
     },
     {
       id: 3,
-      img: "/image/product.webp",
+      img: "/image/actu2.webp",
       title: "🎉 Promo du mois",
       content: "1 menu acheté = 1 boisson offerte tous les mardis !",
     },

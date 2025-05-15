@@ -5,9 +5,9 @@ import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 function Story() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const stories = [
-    { id: 1, title: 'Notre Histoire', image: 'image/product.webp', description: 'Découvrez l\'histoire de notre restaurant, de nos débuts à aujourd\'hui.' },
-    { id: 2, title: 'Nos Valeurs', image: 'image/product.webp', description: 'Nous mettons un point d\'honneur à servir des produits frais et de qualité.' },
-    { id: 3, title: 'L\'équipe', image: 'image/product.webp', description: 'Une équipe passionnée, toujours prête à satisfaire vos papilles.' },
+    { id: 1, title: 'Notre Histoire', image: 'image/actu.webp', description: 'Découvrez l\'histoire de notre restaurant, de nos débuts à aujourd\'hui.' },
+    { id: 2, title: 'Nos Valeurs', image: 'image/actu1.webp', description: 'Nous mettons un point d\'honneur à servir des produits frais et de qualité.' },
+    { id: 3, title: 'L\'équipe', image: 'image/actu2.webp', description: 'Une équipe passionnée, toujours prête à satisfaire vos papilles.' },
   ];
 
   const nextStory = () => {

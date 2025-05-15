@@ -1,6 +1,7 @@
 .story {
-  padding: 2rem 1rem;
+  padding: 5rem 1rem;
   text-align: center;
+  background: linear-gradient(to bottom, #f9f9f9, $primary-color);
 
   h2 {
     font-size: 2rem;
@@ -22,7 +23,7 @@
   .story-slide {
     @include flex-column;
     transition: transform 0.3s ease-in-out;
-
+    
     .story-image {
       width: 100%;
       max-height: 250px;
@@ -49,12 +50,12 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: $hover-color;
-    color: #fff;
+    background-color: #eee;
+    color: #111;
     border: none;
     font-size: 1.2rem;
     padding: 1rem;
-    border-radius: $radius-md;
+    border-radius: $radius-pill;
     cursor: pointer;
     transition: background-color 0.3s ease;
 

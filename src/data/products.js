@@ -4,6 +4,8 @@ const products = [
       name: 'Nouveautés 🚀',
       slug: 'nouveautes 🚀',
       products: [
+        { id: 99, name: "Tacos Tandoori", image: "image/tacos.webp", price: "6,90€" },
+        { id: 100, name: "Tacos tenders spicy", image: "image/tacos.webp", price: "6,90€" },
         { id: 101, name: "Tacos Raclette", image: "image/tacos.webp", price: "6,90€" },
         { id: 102, name: "Burger Truffe", image: "image/product.webp", price: "7,50€" }
       ]

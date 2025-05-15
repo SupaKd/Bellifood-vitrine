@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "../pages/home/Home";
-import Menu from "../pages/Menu";
+import Menu from "../pages/product/Menu";
 import Contact from "../pages/Contact";
-import CategoryPage from '../pages/CategoryPage';
+import CategoryPage from '../pages/product/CategoryPage';
 import Story from "../pages/Story";
 
 function AppRoutes() {

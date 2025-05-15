@@ -1,6 +1,7 @@
 .contact-page {
     @include flex-center;
     font-family:'Times New Roman', Times, serif;
+    background: linear-gradient(to bottom, #f9f9f9, $primary-color);
     padding: 2rem;
     color: #fff;
     @include slide-left;

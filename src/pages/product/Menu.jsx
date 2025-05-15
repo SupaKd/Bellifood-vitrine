@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import products from '../data/products.js';
+import products from '../../data/products.js';
 
 function Menu() {
   return (

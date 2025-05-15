@@ -1,6 +1,8 @@
 .menu {
   padding: 2rem;
   text-align: center;
+  background: linear-gradient(to bottom, #f9f9f9, $primary-color);
+
 
   .top-menu {
     background-color: $secondary-color;
