@@ -48,19 +48,19 @@
   .prev,
   .next {
     position: absolute;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
-    background-color: #eee;
-    color: #111;
+    background-color: $valid-color;
+    color: #f9f9f9;
     border: none;
     font-size: 1.2rem;
     padding: 1rem;
-    border-radius: $radius-pill;
+    border-radius: $radius-lg;
     cursor: pointer;
     transition: background-color 0.3s ease;
 
     &:hover {
-      background-color: #eee;
+      background-color: $secondary-color;
     }
   }
 
