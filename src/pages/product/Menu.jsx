@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import products from '../../data/products.js';
+import Bestsellers from "../../pages/home/Bestsellers.jsx";
+
 
 function Menu() {
   return (
@@ -10,10 +12,14 @@ function Menu() {
         <p>Faites-vous plaisir, il y en a pour tous les goûts !</p>
       </div>
 
+      <section className="bestsellers">
+        <Bestsellers />
+      </section>
+
       <div className="menu-grid">
         {products.map((cat) => (
           <Link to={`/menu/${cat.slug}`} key={cat.id} className="menu-item">
-            <img src="image/product.webp" alt={cat.name} />
+            <img src={cat.image} alt={cat.name} />
             <h3>{cat.name}</h3>
           </Link>
         ))}

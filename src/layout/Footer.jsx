@@ -26,7 +26,7 @@ function Footer() {
           </div>
         </article>
         <article>
-          <h3>MANGER</h3>
+          <h3>COMMANDER</h3>
           <p>Click & collect</p>
           <p>Livraison</p>
           <a href="https://www.ubereats.com/fr/store/bellifood/zqsA8dAkVWydjHvTgAGe_w?utm_campaign=CM2508147-search-free-nonbrand-google-pas_e_all_acq_Global&utm_medium=search-free-nonbrand&utm_source=google-pas">

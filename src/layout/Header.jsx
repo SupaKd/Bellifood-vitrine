@@ -39,7 +39,7 @@ function Header() {
 
       <section className="header-nav">
         <div className={`burger-menu`} onClick={handleClick}>
-          MENU {""}
+          
           <FontAwesomeIcon icon={isMenuOpen ? faArrowLeft : faBars} />
         </div>
       </section>
@@ -47,7 +47,7 @@ function Header() {
       <section className="header-links">
         <nav className={`nav-links ${isMenuOpen ? "active slide-in" : ""}`}>
           <NavLink to="/" end onClick={handleClick}>
-            Acceuil
+            Home
           </NavLink>
           <NavLink to="menu" end onClick={handleClick}>
             Menu

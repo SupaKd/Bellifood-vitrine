@@ -4,19 +4,19 @@ function Actualite() {
   const actuslides = [
     {
       id: 1,
-      img: "/image/actu.webp",
+      img: "/image/resto.webp",
       title: "🔥 Nouveau : Tacos Raclette !",
       content: "Disponible tout l’hiver avec fromage fondant et viande au choix.",
     },
     {
       id: 2,
-      img: "/image/actu1.webp",
+      img: "/image/hero.webp",
       title: "⏰ Fermeture exceptionnelle",
       content: "Le restaurant sera fermé le 1er mai pour la fête du travail.",
     },
     {
       id: 3,
-      img: "/image/actu2.webp",
+      img: "/image/hero3.webp",
       title: "🎉 Promo du mois",
       content: "1 menu acheté = 1 boisson offerte tous les mardis !",
     },
@@ -24,7 +24,7 @@ function Actualite() {
 
   return (
     <section className="actualite-slider">
-      <h2>Actualités 🗞️</h2>
+      <h2>Suivez nous sur nos réseaux ! </h2>
       <div className="slider-track">
         {actuslides.map((slide) => (
           <div className="slide" key={slide.id}>

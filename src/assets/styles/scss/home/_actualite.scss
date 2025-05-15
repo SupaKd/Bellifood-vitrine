@@ -1,7 +1,7 @@
 .simple-slider,
 .actualite-slider {
   padding: 2rem 2rem 0rem 2rem;
-  background-color: #f9f9f9;
+  background-color: $primary-color;
   @include slide-left;
 
 
@@ -9,6 +9,7 @@
     font-size: 2rem;
     margin-bottom: 1rem;
     text-align: center;
+    color: $secondary-color;
   }
 
   .slider-track {
@@ -22,7 +23,7 @@
     .slide {
       flex: 0 0 auto;
       scroll-snap-align: start;
-      background: #f9f9f9;
+      background: $primary-color;
       text-align: center;
       padding: 1rem;
 

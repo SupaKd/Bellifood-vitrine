@@ -9,12 +9,12 @@ function Bestsellers() {
     },
     {
       id: 2,
-      img: "/image/product.webp",
+      img: "/image/burger.webp",
       title: "CHEESEBURGER",
     },
     {
       id: 3,
-      img: "/image/product.webp",
+      img: "/image/croque.webp",
       title: "CROQUE MONSIEUR",
     },
     {
