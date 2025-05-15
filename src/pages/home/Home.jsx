@@ -32,9 +32,9 @@ function Home() {
               restaurant vous accueille tous les jours.
             </p>
             <h2>Une question ?</h2>
-        <NavLink to="contact">
-          <button>Contactez-nous</button>
-        </NavLink>
+            <NavLink to="contact">
+              <button>Contactez-nous</button>
+            </NavLink>
           </div>
         </section>
       </div>

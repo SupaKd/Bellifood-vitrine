@@ -30,7 +30,6 @@ function Actualite() {
           <div className="slide" key={slide.id}>
             <img src={slide.img} alt={slide.title} />
             <h3>{slide.title}</h3>
-            <p>{slide.content}</p>
           </div>
         ))}
       </div>
