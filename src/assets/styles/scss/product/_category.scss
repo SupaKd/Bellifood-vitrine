@@ -1,7 +1,7 @@
 .category-page {
     padding: 2rem;
     background: linear-gradient(to bottom, #f9f9f9, $primary-color);
-
+    text-align: center;
     h2 {
       font-size: 2rem;
       padding: 2rem 1rem;
@@ -12,7 +12,22 @@
       border-radius: $radius-sm;
       @include slide-left;
     }
-  
+    button {
+      padding: 1rem 1rem;
+      margin: 2rem 1rem 2rem 1rem;
+      color: #fff;
+      background-color: $hover1-color;
+      border-radius: $radius-sm;
+      border:none;
+      @include slide-left;
+      @include transition;
+      
+      &:hover {
+        background-color: $hover-color;
+      }
+
+    }
+    
     .products-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
