@@ -29,7 +29,6 @@ function Actualite() {
         {actuslides.map((slide) => (
           <div className="slide" key={slide.id}>
             <img src={slide.img} alt={slide.title} />
-            <h3>{slide.title}</h3>
           </div>
         ))}
       </div>
