@@ -10,7 +10,7 @@ function Footer() {
       <section>
         <article className="contact">
           <h3>CONTACT</h3>
-          <p>7 Rue Francisco Ferrer, 01100 Oyonnax</p>
+          <p>3 Rue Francisco Ferrer, 01100 Oyonnax</p>
           <p>Horaire: Lun - dim 11H à 1h.</p>
           <p>Téléphone: 06.48.57.04.99</p>
         </article>

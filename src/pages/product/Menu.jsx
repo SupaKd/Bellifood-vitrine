@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import products from '../../data/products.js';
-import Bestsellers from "../../pages/home/Bestsellers.jsx";
+import Bestsellers from "../../pages/product/Bestsellers.jsx";
 
 
 function Menu() {
@@ -15,8 +15,10 @@ function Menu() {
       <section className="bestsellers">
         <Bestsellers />
       </section>
+      <h2>Nos catégories</h2>
 
       <div className="menu-grid">
+        
         {products.map((cat) => (
           <Link to={`/menu/${cat.slug}`} key={cat.id} className="menu-item">
             <img src={cat.image} alt={cat.name} />

@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "../pages/home/Home";
 import Menu from "../pages/product/Menu";
-import Contact from "../pages/Contact";
+import Contact from "../pages/annexes/Contact";
 import CategoryPage from '../pages/product/CategoryPage';
-import Story from "../pages/Story";
+import Story from "../pages/annexes/Story";
 
 function AppRoutes() {
   return (

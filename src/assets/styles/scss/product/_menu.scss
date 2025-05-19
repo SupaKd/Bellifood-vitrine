@@ -3,6 +3,11 @@
   text-align: center;
   background: linear-gradient(to bottom, #f9f9f9, $primary-color);
 
+  h2 {
+    font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  }
 
   .top-menu {
     background-color: $secondary-color;
@@ -12,7 +17,7 @@
     margin-bottom: 2rem;
     @include slide-top;
 
-
+    
     .menu-title {
       font-size: 2rem;
       margin-bottom: 0.5rem;

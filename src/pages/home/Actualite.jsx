@@ -24,7 +24,7 @@ function Actualite() {
 
   return (
     <section className="actualite-slider">
-      <h2>Suivez nous sur nos réseaux ! </h2>
+      <h2>Suivez-nous sur nos réseaux ! </h2>
       <div className="slider-track">
         {actuslides.map((slide) => (
           <div className="slide" key={slide.id}>
