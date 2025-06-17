@@ -40,7 +40,9 @@
 
   .nav-links {
     display: none;
-
+    img{
+      width: 100px;
+    }
     // Full screen overlay pour mobile
     &.active {
       @include flex-column;
@@ -65,7 +67,7 @@
         }
       }
       .location {
-        border: solid 2px $valid-color;
+        border: solid 2px $hover-color;
         border-radius: 2rem;
         padding: 1rem;
         font-size: 1.5rem;
@@ -81,8 +83,9 @@
   .reseau {
     display: flex;
     gap: 3rem;
-    margin: 4rem 1rem 1rem 1rem;
+    margin: 1rem;
     padding-top: 1rem;
+    color: $valid-color;
   }
   
   .burger-menu {

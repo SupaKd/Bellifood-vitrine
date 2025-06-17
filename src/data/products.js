@@ -39,7 +39,7 @@ const products = [
       id: 4,
       name: 'NOS SANDWICHS 🥙',
       slug: 'NOS SANDWICHS 🥙',
-      image:"image/sand.webp",
+      image:"image/miche.webp",
 
       products: [
         { id: 17, name: "L'ORIENTAL", image: "image/product.webp", price: "8,50€" },

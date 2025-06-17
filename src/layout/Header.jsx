@@ -46,7 +46,9 @@ function Header() {
 
       <section className="header-links">
         <nav className={`nav-links ${isMenuOpen ? "active slide-in" : ""}`}>
-          
+          <NavLink to="/" end onClick={handleClick}>
+            <img src="image/belli.logo.webp" alt="logo" />
+          </NavLink>
           <NavLink to="menu" end onClick={handleClick}>
             Menu
           </NavLink>

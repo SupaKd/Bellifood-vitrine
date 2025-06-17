@@ -2,14 +2,11 @@
   padding: 1rem 1rem 2rem 1rem;
   text-align: center;
 
-
-
   h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
     font-weight: bold;
     @include slide-top;
-
   }
 
   .grid {
@@ -18,25 +15,22 @@
     gap: 1.5rem;
     @include slide-top;
 
-
     .card {
       position: relative;
-      background-color: #fff;
-      padding: 1rem;
       border-radius: 1rem;
       overflow: hidden;
       transition: transform 0.3s;
-
+      height: 250px; // Hauteur fixe pour bien placer le contenu
 
       &:hover {
         transform: scale(1.02);
       }
 
       img {
-        width: 100px;
-        height: 150px;
-        object-fit: contain;
-
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
       }
 
       .card-content {
@@ -45,14 +39,18 @@
         left: 0;
         right: 0;
         padding: 1rem;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+        color: #fff; 
         text-align: left;
 
-
-        h3,p {
+        h3, p {
           margin: 0;
-          padding:1rem;
-          font-size: 1.2rem;
+          font-size: 1rem;
           font-weight: bold;
+        }
+
+        p {
+          font-weight: normal;
         }
       }
     }

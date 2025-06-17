@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import Hero from "../home/Hero";
 import Actualite from "./Actualite";
 

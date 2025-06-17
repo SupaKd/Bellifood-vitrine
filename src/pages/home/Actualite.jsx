@@ -4,7 +4,7 @@ function Actualite() {
   const actuslides = [
     {
       id: 1,
-      img: "/image/resto.webp",
+      img: "/image/hero2.webp",
       title: "BELLI",
     },
     {
@@ -14,13 +14,13 @@ function Actualite() {
     },
     {
       id: 3,
-      img: "/image/hero3.webp",
+      img: "/image/chevre.webp",
       title: "CHÈVRE MIEL",
     },
     {
       id: 4,
       img: "/image/tarte.webp",
-      title: "TARTE AU DAIM!",
+      title: "TARTE AU DAIM",
     },
 
   ];
