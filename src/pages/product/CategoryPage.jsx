@@ -18,11 +18,7 @@ function CategoryPage() {
   return (
     <div className="category-page">
       <h2>{categoryData.name}</h2>
-      <NavLink to="/menu">
-        <button>
-          <FontAwesomeIcon icon={faArrowLeft} />
-        </button>
-      </NavLink>
+      
       <div className="products-grid">
         {items.map((item) => (
           <div key={item.id} className="product-card">
@@ -31,6 +27,11 @@ function CategoryPage() {
           </div>
         ))}
       </div>
+      <NavLink to="/menu">
+        <button>
+          <FontAwesomeIcon icon={faArrowLeft} />
+        </button>
+      </NavLink>
     </div>
   
   );

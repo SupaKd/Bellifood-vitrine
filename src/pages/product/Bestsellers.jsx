@@ -17,7 +17,7 @@ function Bestsellers() {
     {
       id: 3,
       img: "/image/cro.webp",
-      title: "Croque",
+      title: "CROQUE",
       price: "8.50€",
     },
     {
