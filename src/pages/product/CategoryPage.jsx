@@ -26,17 +26,11 @@ function CategoryPage() {
       <div className="products-grid">
         {items.map((item) => (
           <div key={item.id} className="product-card">
-            <img src={"/image/product.webp"} alt={item.name} />
             <h3>{item.name}</h3>
             <p>{item.price}</p>
           </div>
         ))}
       </div>
-      <NavLink to="/menu">
-        <button>
-          <FontAwesomeIcon icon={faArrowLeft} />
-        </button>
-      </NavLink>
     </div>
   
   );
