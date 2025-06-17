@@ -46,15 +46,11 @@ function Header() {
 
       <section className="header-links">
         <nav className={`nav-links ${isMenuOpen ? "active slide-in" : ""}`}>
-          <NavLink to="/" end onClick={handleClick}>
-            Home
-          </NavLink>
+          
           <NavLink to="menu" end onClick={handleClick}>
             Menu
           </NavLink>
-          <NavLink to="histoire" end onClick={handleClick}>
-            Notre story
-          </NavLink>
+          
           <NavLink to="contact" end onClick={handleClick}>
             Contact
           </NavLink>

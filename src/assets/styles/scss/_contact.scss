@@ -2,7 +2,6 @@
     @include flex-center;
     font-family:'Times New Roman', Times, serif;
     padding: 2rem;
-    color: #fff;
     @include slide-left;
   
     .contact-card {
@@ -45,7 +44,7 @@
             border: 1px solid #111;
             border-radius: 10px;
             background: #fff;
-            color: #fff;
+            color: #111;
             font-size: 1rem;
             transition: all 0.3s ease;
   

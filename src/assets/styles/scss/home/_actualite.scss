@@ -1,9 +1,6 @@
-.simple-slider,
 .actualite-slider {
-  padding: 2rem 2rem 0rem 2rem;
-  background-color: $primary-color;
-  @include slide-left;
-
+  padding: 2rem 2rem 0;
+  background-color: #f8f8f8;
 
   h2 {
     font-size: 2rem;
@@ -19,21 +16,35 @@
     scroll-snap-type: x mandatory;
     padding-bottom: 1rem;
 
-
     .slide {
+      position: relative;
       flex: 0 0 auto;
       scroll-snap-align: start;
-      background: $primary-color;
-      text-align: center;
-      padding: 1rem;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 
       img {
         width: 200px;
         height: 150px;
         object-fit: cover;
-        margin-bottom: 1rem;
-        border-radius: $radius-md;
+        border-radius: 10px;
+        display: block;
+      }
 
+      .slide__title-overlay {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        padding: 0.4rem 0.8rem;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-align: center;
+        white-space: nowrap;
       }
     }
   }

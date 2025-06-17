@@ -63,3 +63,32 @@
   }
 }
 
+
+.map-container {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.map-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: $secondary-color;
+  font-weight: bold;
+}
+
+.map-iframe-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive map iframe */
+.map-iframe-wrapper iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+  display: block;
+}
+
