@@ -19,7 +19,7 @@ function Actualite() {
     },
     {
       id: 4,
-      img: "/image/tarte.webp",
+      img: "/image/daim.webp",
       title: "TARTE AU DAIM",
     },
 

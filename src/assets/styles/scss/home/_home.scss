@@ -67,6 +67,7 @@
 .map-container {
   padding: 2rem 1rem;
   text-align: center;
+  background-color: $primary-color;
 }
 
 .map-container h2 {
@@ -77,17 +78,16 @@
 }
 
 .map-iframe-wrapper {
-  max-width: 1000px;
+  max-width: 400px;
   margin: 0 auto;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 /* Responsive map iframe */
 .map-iframe-wrapper iframe {
   width: 100%;
-  height: 450px;
+  height: 400px;
   border: none;
   display: block;
 }

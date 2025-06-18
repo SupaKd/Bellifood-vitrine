@@ -28,7 +28,7 @@ function Hero() {
               Des recettes fraîchement préparées avec passion à Oyonnax.
             </p>
             <NavLink to="/menu" className="hero__cta">
-              Menu
+              MENU
             </NavLink>
           </div>
         </div>

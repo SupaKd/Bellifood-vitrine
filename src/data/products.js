@@ -106,7 +106,7 @@ const products = [
       id: 9,
       name: 'DESSERTS',
       slug: 'DESSERTS',
-      image:"image/tarte.webp",
+      image:"image/daim.webp",
 
       products: [
         { id: 32, name: "DESSERT MAISON", image: "image/product.webp", price: "3,50€" },
