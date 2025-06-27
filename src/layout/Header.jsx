@@ -38,8 +38,10 @@ function Header() {
       </section>
 
       <section className="header-nav">
-        <div className={`burger-menu`} onClick={handleClick}>
-          
+        <div
+          className={`burger-menu ${isMenuOpen ? "rotate" : ""}`}
+          onClick={handleClick}
+        >
           <FontAwesomeIcon icon={isMenuOpen ? faArrowLeft : faBars} />
         </div>
       </section>
@@ -52,7 +54,7 @@ function Header() {
           <NavLink to="menu" end onClick={handleClick}>
             Menu
           </NavLink>
-          
+
           <NavLink to="contact" end onClick={handleClick}>
             Contact
           </NavLink>
