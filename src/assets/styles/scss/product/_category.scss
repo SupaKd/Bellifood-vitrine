@@ -1,12 +1,13 @@
 .category-page {
+    height: 100vh;
     padding: 2rem 2rem 2rem 2rem;
     text-align: center;
-    background: linear-gradient(to top, $primary-color, transparent);
+    background: linear-gradient(to top, transparent, $primary-color);
 
     h2 {
       font-size: 2rem;
       padding: 2rem 1rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 5rem;
       text-align: center;
       color: $secondary-color;
       background-color: $primary-color;
@@ -15,17 +16,18 @@
 
     }
     button {
-      padding: 1rem 1rem;
-      margin: 2rem 1rem 2rem 1rem;
-      color: #fff;
-      background-color: $valid-color;
+      color: $secondary-color;
+      background-color: $primary-color;
+      margin: 2rem;
+      font-size: 20px;
+      border: none;
       border-radius: $radius-sm;
-      border:none;
       @include slide-left;
       @include transition;
       
       &:hover {
         background-color: $hover-color;
+        padding: 1rem;
       }
 
     }

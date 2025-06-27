@@ -10,7 +10,7 @@ function Footer() {
       <section>
         <article className="contact">
           <h3>CONTACT</h3>
-          <p>3 Rue Francisco Ferrer, 01100 Oyonnax</p>
+          <p>7 Rue Francisco Ferrer, 01100 Oyonnax</p>
           <p>Horaire: Lun - dim 11H à 1h.</p>
           <p>Téléphone: 06.48.57.04.99</p>
         </article>
@@ -36,7 +36,7 @@ function Footer() {
       </section>
 
       <div className="footer-bottom">
-        <p>&copy; - 2025 Bellifood. Tous droits réservés</p>
+        <p>&copy; - 2025 Bellifood. Powered by SupaCo, Tous droits réservés</p>
         <p></p>
       </div>
     </footer>
