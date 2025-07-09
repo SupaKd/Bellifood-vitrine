@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { faBarsStaggered, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram, faTiktok } from "@fortawesome/free-brands-svg-icons";
 import { toggleMenu } from "../features/menuSlice";
 
@@ -42,7 +42,7 @@ function Header() {
           className={`burger-menu ${isMenuOpen ? "rotate" : ""}`}
           onClick={handleClick}
         >
-          <FontAwesomeIcon icon={isMenuOpen ? faArrowLeft : faBars} />
+          <FontAwesomeIcon icon={isMenuOpen ? faArrowLeft : faBarsStaggered} />
         </div>
       </section>
 
