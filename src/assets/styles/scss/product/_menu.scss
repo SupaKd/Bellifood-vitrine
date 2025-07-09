@@ -1,12 +1,12 @@
 .menu {
-  padding: 2rem;
+  padding: 1rem 0.5rem;
   text-align: center;
   background: linear-gradient(to bottom, #f9f9f9, $primary-color);
 
   h2 {
     font-size: 2rem;
-  margin-bottom: 2rem;
-  font-weight: bold;
+    margin-bottom: 2rem;
+    font-weight: bold;
   }
 
   .top-menu {
@@ -17,15 +17,14 @@
     margin-bottom: 2rem;
     @include slide-top;
 
-    
     .menu-title {
       font-size: 2rem;
       margin-bottom: 0.5rem;
     }
 
     p {
-      font-size: 1rem;
-      color: #ccc;
+      font-size: 1.1rem;
+      color: $primary-color;
     }
   }
 
@@ -45,7 +44,6 @@
     position: relative;
     @include slide-top;
 
-
     &:hover {
       transform: scale(1.05);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -55,7 +53,6 @@
       width: 200px;
       height: 250px;
       object-fit: contain;
-      
     }
 
     h3 {
@@ -70,5 +67,3 @@
     }
   }
 }
-
-

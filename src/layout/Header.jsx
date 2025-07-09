@@ -55,10 +55,6 @@ function Header() {
             Menu
           </NavLink>
 
-          <NavLink to="contact" end onClick={handleClick}>
-            Contact
-          </NavLink>
-
           <div className="reseau">
             <a href="https://www.instagram.com/belli.food01/" target="_blank">
               <FontAwesomeIcon icon={faInstagram} />

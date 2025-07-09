@@ -1,5 +1,7 @@
 import Hero from "../home/Hero";
 import Actualite from "./Actualite";
+import Menu from "../product/Menu";
+
 
 function Home() {
   return (
@@ -8,8 +10,10 @@ function Home() {
         <Hero />
       </section>
 
-      <section className="actualite">
-        <Actualite />
+      
+
+      <section>
+        <Menu />
       </section>
       
       <section className="map-container">
