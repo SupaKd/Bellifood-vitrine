@@ -10,7 +10,7 @@
   }
 
   .t-menu {
-    margin:2rem 0.4rem;
+    margin:2rem 0.3rem;
     text-align: start;
     h3{
       font-size: 2rem;
@@ -50,7 +50,6 @@
   .menu-item {
     background: #fff;
     border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     overflow: hidden;
     position: relative;
