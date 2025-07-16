@@ -65,4 +65,25 @@
       }
     }
   }
+
+  .marquee-container {
+    background-color: #f9f9f9;
+    padding: 1rem 0;
+    border-top: 2px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+
+    h3{
+      margin:1rem;
+      font-size: 2rem;
+    }
+  }
+  
+  .marquee-item {
+    margin-right: 2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #111;
+  }
+  
   

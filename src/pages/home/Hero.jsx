@@ -22,14 +22,21 @@ function Hero() {
         <div className="hero__overlay">
           <div className="hero__content">
             <h1 className="hero__title">
-              Savourez l'authenticité du French Tacos
+              Savourez l'a<span className="t-hero">uthenticité</span> du French
+              Tacos
             </h1>
-            <p className="hero__subtitle">
-              Des recettes fraîchement préparées avec passion à Oyonnax.
-            </p>
-            <NavLink to="/menu" className="hero__cta">
+
+            <button
+              onClick={() => {
+                const section = document.getElementById("menu");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+              className="hero__cta"
+            >
               MENU
-            </NavLink>
+            </button>
           </div>
         </div>
       </div>
