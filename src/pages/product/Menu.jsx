@@ -30,7 +30,7 @@ function Menu() {
 
       <section className="menu-grid">
         {products.map((cat, index) => (
-          <ScrollRevealWrapper key={cat.id} delay={index * 0.1}>
+          <ScrollRevealWrapper key={cat.id} delay={index * 0.01}>
             {/* on ne touche pas à la structure interne */}
             <Link to={`/menu/${cat.slug}`} className="menu-item">
               <img src={cat.image} alt={cat.name} />
