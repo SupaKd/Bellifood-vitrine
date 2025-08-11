@@ -1,6 +1,5 @@
-import { useParams } from "react-router-dom";
+import { useParams, NavLink } from "react-router-dom";
 import products from "../../data/products";
-import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
@@ -10,30 +9,39 @@ function CategoryPage() {
   const categoryData = products.find((cat) => cat.slug === category);
 
   if (!categoryData) {
-    return <h2>Catégorie introuvable</h2>;
+    return (
+      <div className="category-page">
+        <h2>Catégorie introuvable</h2>
+        <NavLink to="/menu" className="back-link">
+          <button type="button" aria-label="Retour au menu">
+            <FontAwesomeIcon icon={faArrowLeft} /> Retour au menu
+          </button>
+        </NavLink>
+      </div>
+    );
   }
 
   const items = categoryData.products;
 
   return (
-    <div className="category-page">
+    <main className="category-page">
       <h2>{categoryData.name}</h2>
-      
-      <div className="products-grid">
+
+      <section className="products-grid" aria-label={`${categoryData.name} produits`}>
         {items.map((item) => (
-          <div key={item.id} className="product-card">
+          <article key={item.id} className="product-card" tabIndex="0">
             <h3>{item.name}</h3>
             <p>{item.price}</p>
-          </div>
+          </article>
         ))}
-      </div>
-      <NavLink to="/menu">
-        <button>
-          <FontAwesomeIcon icon={faArrowLeft} />
+      </section>
+
+      <NavLink to="/menu" className="back-link">
+        <button type="button" aria-label="Retour au menu">
+          <FontAwesomeIcon icon={faArrowLeft} /> Retour au menu
         </button>
       </NavLink>
-    </div>
-  
+    </main>
   );
 }
 

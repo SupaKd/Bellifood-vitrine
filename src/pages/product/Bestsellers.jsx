@@ -48,7 +48,7 @@ function Bestsellers() {
 
   return (
     <section className="product-grid">
-      <h2>Nos Best sellers 🚀</h2>
+      <h2>Nos meilleures ventes</h2>
       <div className="grid">
         {products.map((product) => (
           <div

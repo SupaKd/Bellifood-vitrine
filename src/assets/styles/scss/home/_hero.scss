@@ -1,58 +1,116 @@
 .hero {
-    position: relative;
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  margin-top: -80px;
+  overflow: hidden;
+
+  &__slide {
+    position: absolute; // couvre toute la section
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 50vh;
-    margin-top: -80px;
-    overflow: hidden;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+    z-index: 1;
+  }
+
+  &__overlay {
+    position: relative; // au-dessus du slide
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+    @include flex-center;
+    height: 100%;
+    padding: 2rem;
+  }
+
+  &__content {
+    text-align: center;
+    color: #fff;
+    max-width: 800px;
+    /* tu peux garder ou supprimer slide-top si tu veux */
+  }
+
+  &__title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
 
     .t-hero {
-      border-bottom: #fff solid 2px;
-    }
-    &__slide {
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: center;
-      transition: background-image 1s ease-in-out;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    &__overlay {
-      background: rgba(0, 0, 0, 0.5);
-      width: 100%;
-      height: 100%;
-      @include flex-center;
-      padding: 2rem;
-    }
-  
-    &__content {
-      text-align: center;
-      color: #fff;
-      max-width: 800px;
-      @include slide-top;
-    }
-  
-    &__title {
-      font-size: 2.5rem;
-      font-weight: bold;
-      margin-bottom: 4rem;
-    }
-   
-    button {
-      background-color: $danger-color;
-      color: #fff;
-      border: none;
-      padding: 1rem 2rem;
-      border-radius: $radius-md;
-      font-weight: bold;
-      font-size: 1.3rem;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-  
-      &:hover {
-        background-color: $valid-color;
-      }
+      border-bottom: 2px solid #fff;
     }
   }
+
+  button.hero__cta {
+    background: linear-gradient(45deg, $danger-color 0%, darken($danger-color, 10%) 100%);
+    color: #fff;
+    border: none;
+    padding: 1.2rem 3rem;
+    border-radius: $radius-lg;
+    font-family: $font-family;
+    font-weight: 900;
+    font-size: 1.4rem;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba($danger-color, 0.5);
+    transition: 
+      background 0.4s ease,
+      box-shadow 0.4s ease,
+      transform 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    user-select: none;
+  
+    &:hover,
+    &:focus-visible {
+      background: linear-gradient(45deg, $hover-color 0%, darken($hover-color, 15%) 100%);
+      box-shadow: 0 8px 20px rgba($hover-color, 0.7);
+      outline: none;
+      transform: scale(1.05);
+    }
+  
+    &:active {
+      transform: scale(0.98);
+      box-shadow: 0 4px 10px rgba(darken($danger-color, 15%), 0.6);
+    }
+  }
+  
+
+  .hero__nav {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 1rem;
+    z-index: 3;
+  }
+
+  button.hero__nav-btn {
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: #222;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: $radius-pill;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover,
+    &:focus-visible {
+      background: $valid-color;
+      color: #fff;
+      outline: none;
+    }
+  }
+
+  @media (min-width: 768px) {
+    height: 60vh;
+
+    &__title {
+      font-size: 3rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
